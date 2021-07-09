@@ -28,6 +28,9 @@ Route::get('hello/show', [HelloController::class, 'show']);
 
 Route::get('hello/rest', [HelloController::class, 'rest']);
 
+Route::get('hello/session', [HelloController::class, 'ses_get']);
+Route::post('hello/session', [HelloController::class, 'ses_put']);
+
 Route::get('person', [PersonController::class, 'index']);
 
 Route::get('person/find', [PersonController::class, 'find']);
