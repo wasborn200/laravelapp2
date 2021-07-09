@@ -8,7 +8,8 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        $this->call(PeopleTableSeeder::class);
-        $this->call(RestdataTableSeeder::class);
+        //消さないと同じものがまた追加される
+//        $this->call(PeopleTableSeeder::class);
+//        $this->call(RestdataTableSeeder::class);
     }
 }
